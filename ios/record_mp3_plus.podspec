@@ -16,11 +16,12 @@ A new Flutter plugin.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.swift_version = '5.0'
+  s.static_framework = true
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   s.ios.deployment_target = '12.0'
   s.frameworks = 'AVFoundation'
-  s.vendored_libraries = "Classes/Fat-Lame/lib/libmp3lame.a"
+  s.dependency 'lame', '~> 1.2.2'
 end
 

@@ -3,7 +3,7 @@
 //
 
 #import "Mp3EncodeOperation.h"
-#import "lame.h"
+#import <lame/lame.h>
 
 // GLobal var
 lame_t lame;

@@ -1,25 +1,32 @@
 PODS:
   - audioplayers_darwin (0.0.1):
     - Flutter
+    - FlutterMacOS
   - Flutter (1.0.0)
+  - lame (1.2.2)
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - permission_handler_apple (9.1.1):
+  - permission_handler_apple (9.3.0):
     - Flutter
-  - record_mp3_plus (0.0.1):
+  - record_mp3_plus (1.0.0):
     - Flutter
+    - lame (~> 1.2.2)
 
 DEPENDENCIES:
-  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/darwin`)
   - Flutter (from `Flutter`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - record_mp3_plus (from `.symlinks/plugins/record_mp3_plus/ios`)
 
+SPEC REPOS:
+  trunk:
+    - lame
+
 EXTERNAL SOURCES:
   audioplayers_darwin:
-    :path: ".symlinks/plugins/audioplayers_darwin/ios"
+    :path: ".symlinks/plugins/audioplayers_darwin/darwin"
   Flutter:
     :path: Flutter
   path_provider_foundation:
@@ -30,12 +37,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/record_mp3_plus/ios"
 
 SPEC CHECKSUMS:
-  audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
-  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
-  record_mp3_plus: 95707b4f793bd88f3e0f7da7d6f6bb9e4b251ffe
+  audioplayers_darwin: 4f9ca89d92d3d21cec7ec580e78ca888e5fb68bd
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  lame: 40ead9ec43927bcf3700457d96ccc183096c65cc
+  path_provider_foundation: bb55f6dbba17d0dccd6737fe6f7f34fbd0376880
+  permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d
+  record_mp3_plus: 076c20d843fa815931f0f1a55892c0089a0f4b03
 
-PODFILE CHECKSUM: 5d0d95b23e1e37de68cb17d85356fc98cb8df822
+PODFILE CHECKSUM: 98b6e442207b07705dafe910ff97c624fb108271
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
